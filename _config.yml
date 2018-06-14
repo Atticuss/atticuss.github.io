@@ -16,7 +16,7 @@
 title: Veracious Data
 email: jonn.callahan@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  My names Jonn. I enjoy things related to security and fake money. Partially inspired by Enlightenment Now and partially inspired by love for math in general, I decided to start this blog -- exploring truth one data set at a time.
+  My name's Jonn/atticuss. I enjoy all things security and cryptocurrency. Recently, I rediscovered my love for math, the language of the universe, and its unique ability to discover truths that would otherwise escape the ever-feeble and fallible mind. This is a record of my attempts at understanding the world through the lens of objectivity -- a defiant stand against the idealogues and their demagogues that plague all cultural spheres.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://veraciousdata.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: JonnCallahan
