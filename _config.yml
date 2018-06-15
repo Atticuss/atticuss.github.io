@@ -120,10 +120,11 @@ menu:
   home: /
   #categories: /categories/
   #about: /about/
-  archives: /archives/
+  #archives: /archives/
   tags: /tags/
   #sitemap: /sitemap.xml
   #commonweal: /404.html
+  future: /future-research/
 
 
 # Enable/Disable menu icons.
@@ -142,6 +143,7 @@ menu_icons:
   archives: archive
   sitemap: sitemap
   commonweal: heartbeat
+  future: list-ul
 
 
 

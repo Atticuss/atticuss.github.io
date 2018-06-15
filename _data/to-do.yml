@@ -1,5 +1,5 @@
 items:
-  - bitcointalk.org post sentiment analysis vs BTC prices
-  - Directed node graphs from VPC Flow Logs
-  - VPC Flow Log anonomality detection
-  - Tracing BTC funds funneled through "hidden txn" coins, e.g. ZEC
+  - Corellation between bitcointalk.org post sentiment analysis and BTC price changes
+  - Directed node graphs generated from VPC Flow Logs
+  - Anomaly detection of VPC Flow Log-sourced traffic
+  - Tracing BTC funds funneled through "hidden txn" coins, such as ZEC
