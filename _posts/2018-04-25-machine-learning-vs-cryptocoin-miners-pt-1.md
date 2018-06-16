@@ -5,17 +5,11 @@ categories: blog
 title: Machine Learning vs Cryptocoin Miners -- Part 1
 author: Jonn Callahan
 tags:
-  - amazon web services
-  - aws
-  - vpc
-  - flow logs
-  - vpc flow logs
-  - bitcoin
-  - bitcoin mining
-  - machine learning
-  - ml
-  - intrusion detection system
-  - ids
+  - AWS
+  - VPC Flow Logs
+  - Cryptocoin mining
+  - Machine Learning
+  - Intrusion Detection System
 description: One of the most common attack-patterns for black hats these days is to pivot from server control to cryptocoin mining. In this post, I'm going to dig into my attempts at a poor man's IDS leveraging ML and AWS VPC Flow Logs.
 ---
 
