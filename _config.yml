@@ -7,6 +7,7 @@
 title: Veracious Data
 subtitle: Exploring truth -- one data set at a time
 description: I am no data scientist. However, I recently rediscovered my love for math, the language of the universe, and its unique ability to discover truths that would otherwise escape the ever-feeble and fallible mind. This is a record of my attempts at understanding the world through the lens of objectivity.
+signature: I am no data scientist. However, I recently rediscovered my love for math, the language of the universe, and its unique ability to discover truths that would otherwise escape the ever-feeble and fallible mind. This is a record of my attempts at understanding the world through the lens of objectivity.
 author: Jonn//atticuss
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
 language: en
@@ -263,7 +264,7 @@ toc:
 
 sidebar:
   # Sidebar Position, available value: left | right
-  position: right
+  position: left
   #position: right
 
   # Sidebar Display, available value:

@@ -55,7 +55,8 @@
             </div>
           {% endif %}
 
-          {% if site.categories.size > 0 %}
+          <!-- disable categories -->
+          {% if site.categories.size < -1 %}
             {% assign categoriesPageQuery = site.pages | where_exp: 'page', 'page.type == "categories"' %}
             {% if categoriesPageQuery.size > 0 %}
               {% assign hasCategoriesPage = true %}
