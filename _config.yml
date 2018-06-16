@@ -59,6 +59,11 @@ defaults:
     values:
       layout: "post"
       comments: true
+  - 
+    scope:
+      path: "assets/images/blog"
+    values:
+      image: true
 
 # Atom feed
 feed:
@@ -105,7 +110,7 @@ copyright: true
 canonical: true
 
 # Change headers hierarchy on site-subtitle (will be main site description) and on all post/pages titles for better SEO-optimization.
-seo: false
+seo: true
 
 # If true, will add site-subtitle to index page, added in jekyll config.
 # subtitle: Subtitle
@@ -314,7 +319,7 @@ post_meta:
   item_text: true
   created_at: true
   updated_at: false
-  categories: true
+  categories: false
 
 # Post wordcount display settings
 post_wordcount:
