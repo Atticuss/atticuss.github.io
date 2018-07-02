@@ -1,6 +1,7 @@
 items:
   - Corellation between bitcointalk.org post sentiment analysis and BTC price changes
   - Directed node graphs generated from VPC Flow Logs
+  - Generating least-permissive security groups + ACLs from VPC FLow Logs
   - Anomaly detection of VPC Flow Log-sourced traffic
   - Tracing BTC funds funneled through "hidden txn" coins, such as ZEC
   - Various /r/elsagate related research
