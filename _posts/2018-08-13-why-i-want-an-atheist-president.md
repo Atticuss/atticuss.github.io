@@ -12,3 +12,5 @@ description: I'm not interested in the first woman president, nor the first gay,
 ---
 
 ## Intro
+
+I am an atheist. Actually, it may be more apt to refer to myself as an anti-theist because as far as I can tell, religious belief can only be justified from a place of emotional weakness or intellectual dishonesty. That said, despite my fundamental disagreement, my desire for an atheist president is not rooted in our shared beliefs.
