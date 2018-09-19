@@ -6,6 +6,7 @@ tags:
 - Compassion
 - Nazis
 - Extremism
+- Politics
 published: true
 description: "Punching Nazis has become a favored encouragement from those on the left -- so much so that groups like antifa have sprung into the national spotlight for their adoption of it. While it is certainly ethically questionable it's also something far worse: exceedingly ineffective."
 ---

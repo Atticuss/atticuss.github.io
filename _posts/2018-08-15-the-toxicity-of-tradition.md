@@ -6,6 +6,7 @@ tags:
 - Tradition
 - Conservatism
 - Politics
+- Politcs
 published: false
 description: Adapt or die.
 ---
