@@ -7,4 +7,4 @@ items:
   - Various /r/elsagate related research
   - Building a physical intrusion detection system using Deep Lens, facial recognition, and photos of approved personnel
   - MSM outlet and The Knife Media meta analysis
-  - "Analyses of mysqljs safetey (ref: https://stackoverflow.com/questions/30457086/what-is-the-difference-between-single-and-double-question-mark-in-n)"
+  - Clean integration of Istio and Vault
