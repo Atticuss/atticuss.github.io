@@ -23,7 +23,7 @@ For the NAS, the [Odroid HC1](https://ameridroid.com/collections/single-board-co
 
 Beyond the boards themselves, there's a few other peripherals to pick up. First up, for power, most people pick up barrel plug wall wart. This wasn't exactly ideal, though, considering that I had planned to get four Rock64s and two HC1s. Instead, I picked up a [5V/30A power supply](https://smile.amazon.com/LETOUR-Supply-Converter-Adapter-Lighting/dp/B01HJA3OUG/ref=sr_1_3?keywords=letour+5v+30a&qid=1561505939&s=gateway&sr=8-3), the kind typically used for LEDs. Combined with some [barrel plug pigtails](https://www.monoprice.com/product?p_id=6880) and [2.1mm to 2.55 barrel plug converters](https://smile.amazon.com/CGTime-5-5x2-5mm-DC5-5x2-1mm-Connector-DC5-5x2-5mm/dp/B07L5GGW7Q), I could wire all my boards up while only consuming a single electrical outlet. The barrel plug converters were a bit pricy, but you could probably find something cheaper on Ali Express if you're willing to wait. The PSU also doesn't come with a cable, but you can just lop off the female end of any standard monitor/PC/server power cable, twist the wires, and clamp them down.
 
-![Wiring up the PSU](/assets/blog/2019-06-24-my-little-black-box-1/psu-closeup.jpg)
+![Wiring up the PSU](/assets/images/blog/2019-06-24-my-little-black-box-1/psu-closeup.jpg)
 
 I also planned to throw everything into a small rack, so found a 6U and shelf for cheap off Ebay. While the HC1s could stack and just sit on the shelf, I wanted something for Rock64s. While I could get individual cases for each board, I went with a slightly more elegant [3D printed rack](https://www.etsy.com/listing/544554171/sbc-storage-rack-rackmount-compatible) from Etsy, mounted with some M2.5 screws I had laying around. Once summer hit, I started noticing the boards were running hot, even with the AC on, so also picked up a pair of [USB-powered 80mm fans](https://www.amazon.com/gp/product/B002NVC1DS/) that I just slapped onto the back of the rack mount.
 
@@ -31,7 +31,7 @@ Last thing I needed was a few switches and several ethernet cables. The switches
 
 Overall, I ended up paying around $450 for everything. While not exactly cheap, it's still cheaper than the GPU upgrade I've been pining for.
 
-![Final Product](/assets/blog/2019-06-24-my-little-black-box-1/psu-closeup.jpg)
+![Final Product](/assets/images/blog/2019-06-24-my-little-black-box-1/little-black-box.jpg)
 
 ## Usecases
 
