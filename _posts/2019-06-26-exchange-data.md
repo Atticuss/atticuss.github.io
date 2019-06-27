@@ -8,7 +8,7 @@ tags:
   - kubernetes
   - coinbase
   - machine learning
-description: "I started scraping data from Coinbase and have made it publicly available. Possibly more exchanges to be added later. Each days worth of data is written to an HDF and backed up to a publicly readable S3 bucket that can be found here: https://cryptoexchanges.veraciousdata.io/"
+description: "I started scraping data from Coinbase and have made it publicly available. Possibly more exchanges to be added later. Each days worth of data is written via HDF5 and backed up to a publicly readable S3 bucket."
 ---
 
 Coinbase Pro (previously Gdax) has a nice little API for pulling market data. So I decided to use it to scraping all open orders once per minute. I've made this data publicly available via an S3 bucket. Don't make me regret it. The bucket can be found here:
