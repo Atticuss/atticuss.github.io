@@ -8,14 +8,24 @@ tags:
   - kubernetes
   - coinbase
   - machine learning
-description: "I started scraping data from Coinbase and have made it publicly available. Possibly more exchanges to be added later. Each days worth of data is written via HDF5 and backed up to a publicly readable S3 bucket."
+description: "I started scraping data from Coinbase and have made it publicly available. Possibly more exchanges to be added later. Each days worth of data is written via HDF5 and backed up to a publicly readable S3 bucket. Don't make me regret it."
 ---
 
-Coinbase Pro (previously Gdax) has a nice little API for pulling market data. So I decided to use it to scraping all open orders once per minute. I've made this data publicly available via an S3 bucket. Don't make me regret it. The bucket can be found here:
+Coinbase Pro (previously Gdax) has a nice little API for pulling market data. So I decided to use it to scraping all open orders once per minute. I've made this data publicly available via an S3 bucket. The bucket can be found here:
 
 https://cryptoexchanges.veraciousdata.io/
 
 ## How to Use
+
+The bucket itself is public, so any set of creds can list and pull objects. Object keys are prepended with the exchange the data was pulled from, though at the moment I'm only scraping Coinbase:
+
+```python
+>>> import boto3
+>>> client = boto3.client("s3")
+>>> resp = client.list_objects_v2(Bucket="cryptoexchanges.veraciousdata.io")
+>>> [c["Key"] for c in resp["Contents"]]
+['coinbase/26-06-19.hdf']
+```
 
 The data is written to via [HDF5](https://en.wikipedia.org/wiki/HDF) with a single file dedicated to each day. I used the `h5py` Python module, but any HDF5 reader would suffice:
 
@@ -47,7 +57,7 @@ array([(12850.26, 0.49446064), (12850.26, 0.5       ),
 12850.26
 ```
 
- The `price-points` group has the `buy`, `sell`, and `spot` prices for not only BTC, but ETH, XRP, and LTC as well. The trade volume for these coins is regularly pretty high, and a fair margin of the rest of the shitcoins out there, so figured it'd be worth collecting as well:
+ The `price-points` group has the `buy`, `sell`, and `spot` prices for not only BTC, but ETH, XRP, and LTC as well. The trade volume for these coins is regularly pretty high, and a fair margin higher than the rest of the shitcoins out there, so figured it'd be worth collecting as well:
 
  ```python
  >>> [k for k in f["1409:17"]["price-points"].keys()]
