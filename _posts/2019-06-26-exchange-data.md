@@ -2,7 +2,7 @@
 published: true
 layout: post
 categories: blog
-title: Exchange Data
+title: Scraping Cryptocoin Exchange Data
 author: Jonn Callahan
 tags:
   - kubernetes
