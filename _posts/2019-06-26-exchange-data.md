@@ -13,7 +13,7 @@ description: "I started scraping data from Coinbase and have made it publicly av
 
 Coinbase Pro (previously Gdax) has a nice little API for pulling market data. So I decided to use it to scraping all open orders once per minute. I've made this data publicly available via an S3 bucket. The bucket can be found here:
 
-https://cryptoexchanges.veraciousdata.io/
+[https://cryptoexchanges.veraciousdata.io/](https://cryptoexchanges.veraciousdata.io/)
 
 ## How to Use
 
