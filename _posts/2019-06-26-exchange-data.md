@@ -57,7 +57,7 @@ array([(12850.26, 0.49446064), (12850.26, 0.5       ),
 12850.26
 ```
 
-You can also use standard `numpy` ndarray slicing syntax. For example, if you wanted to get just the prices of each `ask` key:
+You can also use standard `numpy` ndarray slicing syntax. For example, if you wanted to get just the prices of each open ask order:
 
 ```python
 >>> f["1409:17"]["asks"][:]["price"]
