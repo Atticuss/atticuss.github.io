@@ -27,7 +27,7 @@ The bucket itself is public, so any set of creds can list and pull objects. Obje
 ['coinbase/26-06-19.hdf']
 ```
 
-The data is written to via [HDF5](https://en.wikipedia.org/wiki/HDF) with a single file dedicated to each day. I used the `h5py` Python module, but any HDF5 reader would suffice:
+The data is written via [HDF5](https://en.wikipedia.org/wiki/HDF) with a single file dedicated to each day. I used the `h5py` Python module, but any HDF5 reader would suffice:
 
 ```python
 >>> import h5py
@@ -46,7 +46,7 @@ The HDF itself is split into groups, one for each set of queries, named by the U
 1414:17
 ```
 
-Within each group, there's a `bids`, `asks`, and `price-points` subgroups. The `bids` and `asks` groups are the complete order books listed on Coinbase at that time. They were pulled via the [/products/BTC-USD/book?level-3](https://docs.pro.coinbase.com/#get-product-order-book) API call. Each item within `bids` and `asks` can be retrieved via the `price` and `size` attributes:
+Within each group, there's a `bids`, `asks`, and `price-points` subgroup. The `bids` and `asks` groups are the complete order books listed on Coinbase at that time. They were pulled via the [/products/BTC-USD/book?level-3](https://docs.pro.coinbase.com/#get-product-order-book) API call. Each item within `bids` and `asks` can be retrieved via the `price` and `size` keys:
 
 ```python
 >>> f["1409:17"]["asks"][0:5]
