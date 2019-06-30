@@ -27,6 +27,10 @@ Beyond the boards themselves, there's a few other peripherals to pick up. First 
 
 I also planned to throw everything into a small rack, so found a 6U and shelf for cheap off Ebay. While the HC1s could stack and just sit on the shelf, I wanted something for Rock64s. While I could get individual cases for each board, I went with a slightly more elegant [3D printed rack](https://www.etsy.com/listing/544554171/sbc-storage-rack-rackmount-compatible) from Etsy, mounted with some M2.5 screws I had laying around. Once summer hit, I started noticing the boards were running hot, even with the AC on, so also picked up a pair of [USB-powered 80mm fans](https://www.amazon.com/gp/product/B002NVC1DS/) that I just slapped onto the back of the rack mount.
 
+![Fans Mounted](/assets/images/blog/2019-06-24-my-little-black-box-1/internal.jpg)
+
+Yes yes, I know: it's incredibly dusty in there. Before I got the 80mm's mounted, I had a big box fan blowing directly into the front of the case to keep the boards from overheating. Better dusty than melted.
+
 Last thing I needed was a few switches and several ethernet cables. The switches I already had laying around, including a small managed one which allows for port mirroring, but I did end up grabbing a bunch of 1' ethernet cables off Monoprice for cheap.
 
 Overall, I ended up paying around $450 for everything. While not exactly cheap, it's still cheaper than the GPU upgrade I've been pining for.
