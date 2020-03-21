@@ -11,7 +11,7 @@ tags:
 description: "I started scraping data from Coinbase and have made it publicly available. Possibly more exchanges to be added later. Each days worth of data is written via HDF5 and backed up to a publicly readable S3 bucket. Don't make me regret it."
 ---
 
-Coinbase Pro (previously Gdax) has a nice little API for pulling market data. So I decided to use it to scraping all open orders once per minute. I've made this data publicly available via an S3 bucket. The bucket can be found here:
+Coinbase Pro (previously Gdax) has a nice little API for pulling market data. So I decided to use it to scraping all open orders once per minute. I've made this data publicly available via an S3 bucket. Filenames represent a days worth of data in the format of `year-month-day.hdf`. The bucket can be found here:
 
 [https://cryptoexchanges.veraciousdata.io/](https://cryptoexchanges.veraciousdata.io/)
 
@@ -24,14 +24,14 @@ The bucket itself is public, so any set of creds can list and pull objects. Obje
 >>> client = boto3.client("s3")
 >>> resp = client.list_objects_v2(Bucket="cryptoexchanges.veraciousdata.io")
 >>> [c["Key"] for c in resp["Contents"]]
-['coinbase/26-06-19.hdf']
+['coinbase/19-06-26.hdf']
 ```
 
 The data is written via [HDF5](https://en.wikipedia.org/wiki/HDF) with a single file dedicated to each day. I used the `h5py` Python module, but any HDF5 reader would suffice:
 
 ```python
 >>> import h5py
->>> f = h5py.File("26-06-19.hdf", "r")
+>>> f = h5py.File("19-06-26.hdf", "r")
 ```
 
 The HDF itself is split into groups, one for each set of queries, named by the UTC timestamp the scrape was started:
@@ -85,7 +85,7 @@ The data is harvested via a Python3 script using `h5py` (obviously) and `twisted
 
 ```python
 >>> import h5py
->>> with h5py.File("26-06-19.hdf", "r") as f:
+>>> with h5py.File("19-06-26.hdf", "r") as f:
 ...   [k for k in f[0:9]]
 <HDF5 group "/0131:15" (3 members)>
 <HDF5 group "/0132:22" (3 members)>
