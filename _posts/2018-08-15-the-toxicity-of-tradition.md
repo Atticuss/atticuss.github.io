@@ -12,4 +12,4 @@ description: Adapt or die.
 
 ## Intro
 
-to those who believe in god, i would argue this: he may be all powerful, but we are not helpless. embrace science. embrace technology. embrace progress. christian morals argue for self-sacrifice to promote (synonym) personal growth, why turn your nose growth as a species?
+to those who believe in god, i would argue this: he may be all powerful, but we are not all helpless. embrace science. embrace technology. embrace progress. christian morals argue for self-sacrifice to promote personal growth, why turn your nose at growth as a species?

@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 layout: post
 categories: blog
 title: Machine Learning vs Cryptocoin Miners -- Part 1
