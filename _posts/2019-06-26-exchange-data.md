@@ -22,7 +22,7 @@ The bucket itself is public, so any set of creds can list and pull objects. Obje
 ```python
 >>> import boto3
 >>> client = boto3.client("s3")
->>> resp = client.list_objects_v2(Bucket="cryptoexchanges.veraciousdata.io")
+>>> resp = client.list_objects_v2(Bucket="cryptoexchanges.veraciousdata.io", Prefix="coinbase/")
 >>> [c["Key"] for c in resp["Contents"]]
 ['coinbase/19-06-26.hdf']
 ```

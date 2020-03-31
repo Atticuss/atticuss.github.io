@@ -22,7 +22,7 @@ The bucket itself is public, so any set of creds can list and pull objects. Obje
 ```python
 >>> import boto3
 >>> client = boto3.client("s3")
->>> resp = client.list_objects_v2(Bucket="cryptoexchanges.veraciousdata.io")
+>>> resp = client.list_objects_v2(Bucket="cryptoexchanges.veraciousdata.io", Prefix="reddit/")
 >>> [c["Key"] for c in resp["Contents"]]
 ['reddit/20-03-31.hdf']
 ```
@@ -146,6 +146,8 @@ The following tables list the data available and the key name to reference it by
 
 ## Deployment
 
-The data is harvested via a Python3 script using `h5py` (obviously), `twisted` for scheduling, and `praw` for querying the reddit API. 
+The data is harvested via a Python3 script using `h5py` (obviously), `twisted` for scheduling, and `praw` for querying the reddit API. The `vaderSentiment` module was used for performing the sentiment analysis itself:
+
+https://github.com/cjhutto/vaderSentiment
 
 The (ugly-as-sin) code can be found [here](https://github.com/Atticuss/little-black-box/tree/master/images/sentiment_scrape/reddit), as well as the Dockerfile.
