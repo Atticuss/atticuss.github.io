@@ -37,13 +37,8 @@ The data is written via [HDF5](https://en.wikipedia.org/wiki/HDF) with a single 
 The HDF itself is split into groups, one for each set of queries, named by the UTC timestamp the scrape was started:
 
 ```python
->>> [k for k in f.keys()[0:5]]
-1409:17
-1410:17
-1411:17
-1412:17
-1413:17
-1414:17
+>>> [k for k in f.keys()]
+['1409:17', '1410:17', '1411:17', '1412:17'...]
 ```
 
 Within each group, there's a `bids`, `asks`, and `price-points` subgroup. The `bids` and `asks` groups are the complete order books listed on Coinbase at that time. They were pulled via the [/products/BTC-USD/book?level-3](https://docs.pro.coinbase.com/#get-product-order-book) API call. Each item within `bids` and `asks` can be retrieved via the `price` and `size` keys.
