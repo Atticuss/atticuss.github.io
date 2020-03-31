@@ -6,8 +6,10 @@ title: Scraping Reddit Sentiment Data
 author: Jonn Callahan
 tags:
   - kubernetes
-  - coinbase
+  - reddit
   - machine learning
+  - sentiment analysis
+  - bitcoin
 description: "I started scraping sentiment data from /r/bitcoin and have made it publicly available. Possibly other sources to be added later. Each days worth of data is written via HDF5 and backed up to a publicly readable S3 bucket. Don't make me regret it."
 ---
 
